@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -29,6 +30,7 @@
 
 .header__add-icon {
   width: 40px;
+  pointer-events: none;
 }
 
 .main {
@@ -39,18 +41,34 @@
   align-items: center;
 }
 
+.main--unactive {
+  display: none;
+}
+
 .form-container {
   width: 90%;
-  height: 80%;
+  min-height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.form-container__title {
+  height: 10%;
+}
+
 .form-container__form {
+  height: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.form-container__label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #acacac;
 }
 
 .form-container--unactive {

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 .container{
     width: 100vw;
@@ -24,6 +25,7 @@
     }
     &__add-icon{
         width: 40px;
+        pointer-events: none;
     }
 }
 .main{
@@ -32,17 +34,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &--unactive{
+        display: none;
+    }
 }
 .form-container{
     width: 90%;
-    height: 80%;
+    min-height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    &__title{
+        height: 10%;
+    }
     &__form{
+        height: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+    }
+    &__label{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #acacac;
     }
     &--unactive{
         display: none;
