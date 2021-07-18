@@ -10,10 +10,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(34, 138, 235);
+}
+.header{
+    height: 20vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    &__add-btn{
+        background-color: rgb(34, 138, 235);
+        border: none;
+        width: 70px;
+    }
+    &__add-icon{
+        width: 40px;
+    }
 }
 .main{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    min-height: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -28,5 +43,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    &--unactive{
+        display: none;
     }
 }
