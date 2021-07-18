@@ -1,6 +1,7 @@
 const addBtn = document.querySelector(".header__add-btn");
 const mainContainer = document.querySelector(".main");
 const formContainer = document.querySelector(".form-container");
+const headerIcon = document.querySelector(".header__add-icon");
 
 class Job {
   constructor(adress, name, number, foil, foilLength, date) {
@@ -14,6 +15,12 @@ class Job {
 }
 
 addBtn.addEventListener("click", (e) => {
-  mainContainer.classList.add("main--unactive");
-  formContainer.classList.remove("form-container--unactive");
+  mainContainer.classList.toggle("main--unactive");
+  formContainer.classList.toggle("form-container--unactive");
+
+  if (mainContainer.classList.contains("main--unactive")) {
+    headerIcon.src = "./imgs/back_icon.svg";
+  } else {
+    headerIcon.src = "./imgs/add_icon.svg";
+  }
 });

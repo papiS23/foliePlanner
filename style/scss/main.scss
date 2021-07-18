@@ -49,6 +49,7 @@
     }
     &__form{
         height: 90%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -57,7 +58,16 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    &__input, &__select{
+        width: 100%;
+        background-color: rgb(34, 138, 235);
+        border: none;
         border-bottom: solid 1px #acacac;
+        &:focus{
+            outline: none;
+            border-bottom: solid 1px #5df023;
+        }
     }
     &--unactive{
         display: none;
