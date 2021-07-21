@@ -17,6 +17,10 @@
             <button class="header__add-btn"><img src="./imgs/add_icon.svg" alt="add button" class="header__add-icon"></button>
         </header>
         <main class="main">
+            <h2 class="main__title">Zlecenia</h2>
+            <ul class="main__list">
+
+            </ul>
         </main>
         <div class="form-container form-container--unactive">
             <h2 class="form-container__title">Dane zlecenia</h2>
@@ -32,7 +36,7 @@
                 </label>
                 <label class="form-container__label">
                     <select name="foil" id="foil" class="form-container__select">
-                        <option value="" disabled selected hidden style="color: #8e8e8e;">Folia:</option>
+                        <option value="" disabled selected hidden class="form-container__option form-container__option--title">Folia:</option>
                         <option value="silver20" class="form-container__option">silver20</option>
                         <option value="silver30" class="form-container__option">silver30</option>
                         <option value="silver40" class="form-container__option">silver40</option>
@@ -46,7 +50,7 @@
                 <label class="form-container__label">
                     <input type="date" class="form-container__input" placeholder="Data:">
                 </label>
-                <input type="submit" value="Dodaj">
+                <input type="submit" value="Dodaj" class="form-container__submit form-container__submit--clickable">
             </form>
         </div>
     </div>

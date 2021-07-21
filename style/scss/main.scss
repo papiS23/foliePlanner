@@ -31,8 +31,8 @@
 .main{
     width: 90%;
     min-height: 80%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     &--unactive{
         display: none;
@@ -59,6 +59,11 @@
         display: flex;
         justify-content: space-between;
     }
+    &__option{
+        &--title{
+            color: #adadad;
+        }
+    }
     &__input, &__select{
         width: 100%;
         background-color: rgb(34, 138, 235);
@@ -67,6 +72,16 @@
         &:focus{
             outline: none;
             border-bottom: solid 1px #5df023;
+        }
+    }
+    &__submit{
+        padding: 1em;
+        border: none;
+        background-color: rgb(192, 192, 192);
+        pointer-events: none;
+        &--clickable{
+            background-color: rgb(84, 206, 13);
+            pointer-events: all;
         }
     }
     &--unactive{
