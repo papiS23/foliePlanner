@@ -25,31 +25,19 @@
         <div class="form-container form-container--unactive">
             <h2 class="form-container__title">Dane zlecenia</h2>
             <form class="form-container__form">
-                <label class="form-container__label">
-                    <input type="text" class="form-container__input" placeholder="Adres:">
-                </label>
-                <label class="form-container__label"> 
-                    <input type="text" class="form-container__input" placeholder="Imię/Nazwa:">
-                </label>
-                <label class="form-container__label">
-                    <input type="number" class="form-container__input" placeholder="Numer telefonu:">
-                </label>
-                <label class="form-container__label">
-                    <select name="foil" id="foil" class="form-container__select">
-                        <option value="" disabled selected hidden class="form-container__option form-container__option--title">Folia:</option>
-                        <option value="silver20" class="form-container__option">silver20</option>
-                        <option value="silver30" class="form-container__option">silver30</option>
-                        <option value="silver40" class="form-container__option">silver40</option>
-                        <option value="silver50" class="form-container__option">silver50</option>
-                        <option value="silver60" class="form-container__option">silver60</option>
-                    </select>
-                </label>
-                <label class="form-container__label">
-                    <input type="number" class="form-container__input" placeholder="Długość folii:">
-                </label>
-                <label class="form-container__label">
-                    <input type="date" class="form-container__input" placeholder="Data:">
-                </label>
+                <input type="text" class="form-container__input" placeholder="Adres:">
+                <input type="text" class="form-container__input" placeholder="Imię/Nazwa:">
+                <input type="number" class="form-container__input" placeholder="Numer telefonu:">
+                <select name="foil" id="foil" class="form-container__select form-container__input">
+                    <option value="" disabled selected hidden class="form-container__option form-container__option--title">Wybierz folie:</option>
+                    <option value="silver20" class="form-container__option">silver20</option>
+                    <option value="silver30" class="form-container__option">silver30</option>
+                    <option value="silver40" class="form-container__option">silver40</option>
+                    <option value="silver50" class="form-container__option">silver50</option>
+                    <option value="silver60" class="form-container__option">silver60</option>
+                </select>
+                <input type="number" class="form-container__input" placeholder="Długość folii:">
+                <input type="date" class="form-container__input" placeholder="Data:">
                 <input type="submit" value="Dodaj" class="form-container__submit form-container__submit--clickable">
             </form>
         </div>

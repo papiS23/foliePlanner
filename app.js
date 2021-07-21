@@ -2,6 +2,8 @@ const addBtn = document.querySelector(".header__add-btn");
 const mainContainer = document.querySelector(".main");
 const formContainer = document.querySelector(".form-container");
 const headerIcon = document.querySelector(".header__add-icon");
+const formDatas = document.querySelectorAll(".form-container__input");
+const formAddBtn = document.querySelector(".form-container__submit");
 
 class Job {
   constructor(adress, name, number, foil, foilLength, date) {
@@ -23,4 +25,9 @@ addBtn.addEventListener("click", (e) => {
   } else {
     headerIcon.src = "./imgs/add_icon.svg";
   }
+});
+
+formAddBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(formDatas);
 });
