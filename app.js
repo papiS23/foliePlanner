@@ -6,13 +6,24 @@ const headerIcon = document.querySelector(".header__add-icon");
 const formAddBtn = document.querySelector(".form-container__submit");
 
 class Job {
-  constructor(adress, name, number, foil, foilLength, date) {
+  constructor(
+    adress,
+    name,
+    number,
+    foil,
+    foilLength,
+    date,
+    foilPrice,
+    clientPrice
+  ) {
     this.adress = adress;
     this.name = name;
     this.number = number;
     this.foil = foil;
     this.foilLength = foilLength;
     this.date = date;
+    this.foilPrice = foilPrice;
+    this.clientPrice = clientPrice;
   }
   createListItem() {
     const Item = document.createElement("div"); //glowny kontener calego zlecenia
@@ -44,7 +55,9 @@ formAddBtn.addEventListener("click", (e) => {
     formDatas[2].value,
     formDatas[3].value,
     formDatas[4].value,
-    formDatas[5].value
+    formDatas[5].value,
+    formDatas[6].value,
+    formDatas[7].value
   );
   listItem.createListItem();
 });
