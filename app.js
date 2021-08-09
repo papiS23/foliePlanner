@@ -4,24 +4,28 @@ const mainList = document.querySelector(".main__list");
 const formContainer = document.querySelector(".form-container");
 const headerIcon = document.querySelector(".header__add-icon");
 const formAddBtn = document.querySelector(".form-container__submit");
+const dimensionsBox = document.querySelector(".form-container__dimen-items");
+const dimensionsAddBtn = document.querySelector(
+  ".form-container__dimen-addBtn"
+);
 
 class Job {
   constructor(
     adress,
     name,
     number,
+    date,
     foil,
     foilLength,
-    date,
     foilPrice,
     clientPrice
   ) {
     this.adress = adress;
     this.name = name;
     this.number = number;
+    this.date = date;
     this.foil = foil;
     this.foilLength = foilLength;
-    this.date = date;
     this.foilPrice = foilPrice;
     this.clientPrice = clientPrice;
   }
@@ -60,4 +64,9 @@ formAddBtn.addEventListener("click", (e) => {
     formDatas[7].value
   );
   listItem.createListItem();
+});
+
+dimensionsAddBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  //pobrac wartosci i stworzy elementy zawierajace wymiary.
 });

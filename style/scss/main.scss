@@ -44,8 +44,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    &--unactive{
+        display: none;
+    }
     &__title{
         height: 10%;
+        &--dimensions{
+            height: auto;
+            font-size: 1em;
+        }
     }
     &__form{
         height: 80vh;
@@ -79,7 +86,33 @@
             pointer-events: all;
         }
     }
-    &--unactive{
-        display: none;
+    &__dimensions{
+        width: 80%;
+    }
+    &__dimen-items{
+
+    }
+    &__dimen-inputs{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__dimen-input{
+        width: 4em;
+        &--szt{
+            width: 2em;
+        }
+    }
+    &__dimen-paragraph{
+        margin: 3%;
+        &--szt{
+            margin-left: 10%;
+        }
+    }
+    &__dimen-addBtn{
+        background: transparent;
+        border: none;
+        margin-left: 10%;
     }
 }

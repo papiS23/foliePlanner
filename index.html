@@ -1,50 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <meta name="Author" content="Bartlomiej Papis">
-    <link rel="stylesheet" href="./style/css/main.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <meta name="Author" content="Bartlomiej Papis" />
+    <link rel="stylesheet" href="./style/css/main.css" />
     <title>Roboty</title>
 </head>
+
 <body>
     <div class="container">
         <header class="header">
-            <button class="header__add-btn"><img src="./imgs/add_icon.svg" alt="add button" class="header__add-icon"></button>
+            <button class="header__add-btn">
+                <img src="./imgs/add_icon.svg" alt="add button" class="header__add-icon" />
+            </button>
         </header>
         <main class="main">
             <h2 class="main__title">Zlecenia</h2>
-            <ul class="main__list">
-
-            </ul>
+            <ul class="main__list"></ul>
         </main>
         <div class="form-container form-container--unactive">
             <h2 class="form-container__title">Dane zlecenia</h2>
             <form class="form-container__form">
-                <input type="text" class="form-container__input" placeholder="Adres:">
-                <input type="text" class="form-container__input" placeholder="Imię/Nazwa:">
-                <input type="number" class="form-container__input" placeholder="Numer telefonu:">
+                <input type="text" class="form-container__input" placeholder="Adres:" />
+                <input type="text" class="form-container__input" placeholder="Imię/Nazwa:" />
+                <input type="number" class="form-container__input" placeholder="Numer telefonu:" />
+                <input type="date" class="form-container__input" placeholder="Data:" />
                 <select name="foil" id="foil" class="form-container__select form-container__input">
-                    <option value="" disabled selected hidden class="form-container__option form-container__option--title">Wybierz folie:</option>
-                    <option value="silver20" class="form-container__option">silver20</option>
-                    <option value="silver30" class="form-container__option">silver30</option>
-                    <option value="silver40" class="form-container__option">silver40</option>
-                    <option value="silver50" class="form-container__option">silver50</option>
-                    <option value="silver60" class="form-container__option">silver60</option>
+                    <option value="" disabled selected hidden
+                        class="form-container__option form-container__option--title">
+                        Wybierz folie:
+                    </option>
+                    <option value="silver20" class="form-container__option">
+                        silver20
+                    </option>
+                    <option value="silver30" class="form-container__option">
+                        silver30
+                    </option>
+                    <option value="silver40" class="form-container__option">
+                        silver40
+                    </option>
+                    <option value="silver50" class="form-container__option">
+                        silver50
+                    </option>
+                    <option value="silver60" class="form-container__option">
+                        silver60
+                    </option>
                 </select>
-                <input type="number" class="form-container__input" placeholder="Długość folii:">
-                <input type="date" class="form-container__input" placeholder="Data:">
-                <input type="number" class="form-container__input" placeholder="Koszty folii:">
-                <input type="number" class="form-container__input"
-                placeholder="Cena dla klienta:">
-                <input type="submit" value="Dodaj" class="form-container__submit form-container__submit--clickable">
+                <div class="form-container__dimensions">
+                    <h2 class="form-container__title form-container__title--dimensions">
+                        Wymiary
+                    </h2>
+                    <div class="form-container__dimen-items">
+                        <div class="form-container__dimen-inputs">
+                            <input type="number" class="form-container__dimen-input" />
+                            <p class="form-container__dimen-paragraph">X</p>
+                            <input type="number" class="form-container__dimen-input" />
+                            <p class="form-container__dimen-paragraph--szt">szt.</p>
+                            <input type="number" value="1" class="
+                    form-container__dimen-input form-container__dimen-input--szt
+                  " />
+                            <button class="form-container__dimen-addBtn">
+                                <img src="./imgs/add_icon.svg" alt="add" class="form-container__dimen-addIcon" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <input type="number" class="form-container__input" placeholder="Długość folii:" />
+                <input type="number" class="form-container__input" placeholder="Koszty folii:" />
+                <input type="number" class="form-container__input" placeholder="Cena dla klienta:" />
+                <input type="submit" value="Dodaj" class="form-container__submit form-container__submit--clickable" />
             </form>
         </div>
     </div>
     <script src="./app.js"></script>
 </body>
+
 </html>
